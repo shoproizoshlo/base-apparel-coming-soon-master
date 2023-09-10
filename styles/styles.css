@@ -74,34 +74,7 @@ h6 {
   font-weight: inherit;
 }
 /*--------------------*/
-/* 
-## Colors
 
-### Primary
-
-- Desaturated Red: hsl(0, 36%, 70%)
-- Soft Red: hsl(0, 93%, 68%)
-
-### Neutral
-
-- Dark Grayish Red: hsl(0, 6%, 24%)
-
-### Gradients
-
-- Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)
-- Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%)
-
-## Typography
-
-### Body Copy
-
-- Font size: 16px
-
-### Font
-
-font-family: 'Josefin Sans', sans-serif;
-- Weights: 300, 400, 600
- */
 :root {
   --primary-desaturated-red: hsl(0, 36%, 70%);
   --primary-soft-red: hsl(0, 93%, 68%);
@@ -151,7 +124,7 @@ font-family: 'Josefin Sans', sans-serif;
   line-height: 25px;
 }
 .input-email {
-  padding: 3% 6%;
+  padding: 19px 31px;
   min-width: 370px;
   border: 1px solid hsl(0, 36%, 87%);
   border-radius: 50px;
@@ -173,7 +146,7 @@ font-family: 'Josefin Sans', sans-serif;
   color: hsl(0, 36%, 87%);
 }
 .submit {
-  padding: 8px 20px;
+  padding: 11px 20px;
   font-size: 35px;
   font-weight: 300;
   color: white;
@@ -190,15 +163,17 @@ font-family: 'Josefin Sans', sans-serif;
   box-shadow: 0 10px 41px rgba(240, 138, 138, 0.4);
 }
 .image-area {
+  padding: 0;
+  margin: 0;
   display: flex;
   order: 1;
-  flex: 1;
+  flex: 1.1;
   background-image: url(/images/hero-desktop.jpg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 100px;
 }
-/* .image-area img {
-  width: 100%;
-  height: 100%;
-} */
 /* footer */
 footer {
   margin: 1%;
@@ -219,9 +194,25 @@ footer {
     flex-direction: column;
   }
   .text-area {
+    padding: 15% 7%;
+    text-align: center;
     order: 2;
   }
-  .image-area img {
+  .heading {
+    font-size: 40px;
+    line-height: 43px;
+    letter-spacing: 14px;
+  }
+  .input-email {
+    min-width: 305px;
+  }
+  .submit {
+    min-width: 70px;
+    left: -50px;
+  }
+  .image-area {
+    background-image: url(/images/hero-mobile.jpg);
+    min-height: 250px;
     order: 1;
   }
 }
