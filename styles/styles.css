@@ -1,0 +1,134 @@
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+/*--------------------*/
+.logo {
+}
+.area {
+  margin: 0;
+  padding: 0;
+}
+.text-area {
+  flex: 1;
+  padding: 4% 10%;
+  background-image: url(/images/bg-pattern-desktop.svg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.heading {
+  margin-top: 20%;
+  font-size: 96px;
+  line-height: 76px;
+  letter-spacing: 25px;
+}
+.message {
+  margin: 7% 28% 7% 0;
+}
+.input-email {
+  padding: 3% 6%;
+  width: 70%;
+  border: 1px solid rebeccapurple;
+  border-radius: 50px;
+}
+.submit {
+  padding: 3.27% 6%;
+  width: 18%;
+  border: 1px solid rebeccapurple;
+  border-radius: 50px;
+  position: relative;
+  left: -10%;
+}
+.image-area {
+  flex: 1;
+  margin: 0;
+  padding: 0;
+}
+.image-area img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* footer */
+footer {
+  margin: 1%;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
