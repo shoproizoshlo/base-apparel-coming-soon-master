@@ -150,7 +150,7 @@ input[type="email"] {
   -webkit-appearance: none;
   appearance: none;
 }
-/* Это стили для не валидных полей */
+
 input:invalid {
   border: 1px solid red;
 }
@@ -158,7 +158,6 @@ input:invalid {
 input:focus:invalid {
   outline: none;
 }
-/* Это стили для кастомных сообщений об ошибке */
 .error {
   width: 100%;
   padding: 0;
