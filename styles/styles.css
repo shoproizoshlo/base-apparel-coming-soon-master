@@ -123,9 +123,10 @@ h6 {
   font-weight: 300;
   line-height: 25px;
 }
-.input-email {
+.email {
+  margin-bottom: 10px;
   padding: 19px 31px;
-  min-width: 370px;
+  width: 375px;
   border: 1px solid hsl(0, 36%, 87%);
   border-radius: 50px;
 }
@@ -145,16 +146,41 @@ h6 {
   /* Internet Explorer 10+ */
   color: hsl(0, 36%, 87%);
 }
+input[type="email"] {
+  -webkit-appearance: none;
+  appearance: none;
+}
+/* Это стили для не валидных полей */
+input:invalid {
+  border: 1px solid red;
+}
+
+input:focus:invalid {
+  outline: none;
+}
+/* Это стили для кастомных сообщений об ошибке */
+.error {
+  width: 100%;
+  padding: 0;
+
+  font-size: 80%;
+  color: red;
+}
+
+.error.active {
+  padding: 30px;
+}
 .submit {
   padding: 11px 20px;
   font-size: 35px;
   font-weight: 300;
   color: white;
   min-width: 100px;
+  height: 56px;
   border: 0 solid;
   border-radius: 50px;
   position: relative;
-  left: -10%;
+  left: -15%;
   background: linear-gradient(
     135deg,
     hsl(0, 80%, 86%) 0%,
@@ -210,8 +236,8 @@ footer {
     line-height: 43px;
     letter-spacing: 14px;
   }
-  .input-email {
-    min-width: 305px;
+  .email {
+    width: 300px;
   }
   .submit {
     min-width: 70px;

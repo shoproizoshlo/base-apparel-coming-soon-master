@@ -42,12 +42,22 @@
             store. Add your email below to stay up-to-date with announcements
             and our launch deals.
           </p>
-          <form action="#" method="get" class="d-flex align-items-center">
-            <input
-              type="email"
-              placeholder="Email Address"
-              class="input-email"
-            />
+          <form
+            novalidate
+            action="#"
+            method="get"
+            id="form"
+            class="d-flex align-items-top"
+          >
+            <label for="mail">
+              <input
+                type="email"
+                placeholder="Email Address"
+                class="email"
+                id="mail"
+                name="mail" />
+              <span class="error" aria-live="polite"></span
+            ></label>
             <button type="submit" class="submit">></button>
           </form>
         </div>
@@ -67,5 +77,6 @@
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>
